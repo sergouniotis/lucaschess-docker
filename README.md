@@ -19,7 +19,7 @@ docker build -t lucaschess .
 ## Usage
 
 ```bash
-docker run --name lucaschess --network host -it --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix lucaschess
+docker run --name lucaschess --network host -it --rm -e DISPLAY=$DISPLAY -e QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/tmp/.X11-unix lucaschess
 
 ```
 
