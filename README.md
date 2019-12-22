@@ -2,7 +2,7 @@
 
 This is a try to dockerize the [lucas chess game](https://github.com/lukasmonk/lucaschess)
 
-##Prerequisites
+## Prerequisites
 Use the latest version of 
 
 	- Docker
