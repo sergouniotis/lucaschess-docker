@@ -1,0 +1,19 @@
+version: '3.2'
+services:
+  server:
+    image: lucaschess
+    container_name: lucaschess
+    environment:
+      - debug=true
+      - DISPLAY=$DISPLAY
+      - QT_X11_NO_MITSHM=1
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:ro
+    networks:
+      host:
+        aliases:
+          - lucaschess
+volumes:
+  acdbdata:
+networks:
+  host:
